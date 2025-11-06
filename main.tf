@@ -42,7 +42,7 @@ resource "aws_security_group" "web_sg" {
 
 # EC2 Instance
 resource "aws_instance" "web" {
-  ami                    = "ami-0e53db6c5f29a338b" # Ubuntu in ap-south-1
+  ami                    = "ami-0ecb62995f68bb549" # Ubuntu in ap-south-1
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.web_key.key_name
   vpc_security_group_ids = [aws_security_group.web_sg.id]
